@@ -1,0 +1,41 @@
+.navi {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo-name {
+    margin: 1em;
+    margin-right: 4em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+
+    list-style: none;
+    margin: 1em;
+
+}
+nav ul a:visited {
+    flex: 1;
+    color: #38E991;
+    text-decoration: none;
+}
+
+
+
+.default-link {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+}
+
+.active-link {
+    text-decoration: none;
+    border-bottom: 1px solid #38E991;
+}
