@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+}
+
+label {
+    flex: 1;
+}
+input {
+    flex: 1;
+}
+
+.sendbutton {
+
+    flex: 1;
+    margin-top: 1.5em;
+    padding: 0.2em;
+    border-style: none;
+    background: black;
+    color: #FFFFFF;
+    border-radius: 4px;
+
+}
+
+.sendbutton:hover {
+    background: #2C2F39;
+
+}
+
+.sendbutton:active {
+    background: #38E991;
+}
