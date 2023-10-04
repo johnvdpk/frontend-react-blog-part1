@@ -14,3 +14,29 @@
 .page-container img {
     width: 500px;
 }
+
+.data-container {
+    }
+
+.data {
+    flex: 1;
+}
+.button {
+    background-color: #2da164;
+    font-size: 1rem;
+    font-family: Roboto;
+    color: whitesmoke;
+    padding: 1.2em;
+    margin: 1em;
+    border-style: none;
+    border-radius: 40px;
+
+}
+
+.button:hover {
+    background-color: #50535C;
+}
+
+.button:active {
+    background-color: black;
+}

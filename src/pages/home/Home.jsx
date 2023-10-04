@@ -1,12 +1,31 @@
 import './Home.css'
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function Home () {
 
     const { register, handleSubmit, formState:{errors} } = useForm();
 
-    function onFormSubmit(data) {
-        console.log(data)
+    async function onFormSubmit(data) {
+
+        try {
+            await axios.post('http://localhost:3000/posts', {
+                title: data.title,
+                subtitle: data.subtitle,
+                content: data.content,
+                created: data.created,
+                author: data.author,
+                readtime: 5,
+                comments: 12,
+                shares: 5,
+
+            });
+            console.log("De data is succesvol opgeslagen");
+        } catch (e) {
+            console.log(e)
+        }
+
+
     }
 
     console.log("ERROS",errors);
@@ -42,7 +61,7 @@ function Home () {
                         
                     />
                     {errors.content && <p>Minimaal 100 leestekens en maximaal 300</p>}
-                    <button className="sendbutton" >send</button>
+                    <button className="sendbutton">send</button>
                 </form>
             </div>
         </>
